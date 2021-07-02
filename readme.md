@@ -12,8 +12,10 @@ para a estruta da página:
 - Javascript
     Com o Javascript, desenvolvi o código para a utilização do botão mobile, assim como para o slide de notícias e a validação do e-mail.
 
-- Gilder.js
+- Slickjs
     É uma library que auxilia na criação de um slideshow com uma forma de desenvolvimento mais rápida. Assim podemos ter uma agilidade na entrega do projeto ao utilizar algo que nos faça mais produtivo.
+
+    Alterei também alguns componentes de estilização, para compor as cores da landing page, como no botão e dots dos slides na section blog
 
 - O Sass não foi usado, não ter conhecimento em Sass ainda, porém durante o processo do desenvolvimento da LP, comecei a fazer um curso de Sass para adiquirir o conhecimento necessário para a utilização da tecnologia Saas.
 

@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 :root{
-    --color-background: #F6F6F6;
+    --color-white: #ffffff;
+    --color-like-red: #f53838;
     --color-like-blue: #0B132A;
     --color-like-gray: #4F5665;
-    --color-like-red: #f53838;
-    --color-white: #ffffff;
-    --font-rubik: 'Rubik', sans-serif;
+    --color-light-gray: #dddddd;
+    --color-background: #F6F6F6;
+
     --font-size-14px: 0.875em;
     --font-size-16px: 1em;
     --font-size-18px: 1.125em;
@@ -13,6 +14,7 @@
     --font-size-25px: 1.5625em;
     --font-size-35px: 2.1875em;
     --font-size-50px: 3.125rem;
+    --font-rubik: 'Rubik', sans-serif;
 
     --animacao: all ease-in .4s;
 }
@@ -24,16 +26,21 @@
 body{
     background: var(--color-background);
 }
-
 header{
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
     display: flex;
-    justify-content: center;
-    height: 100px;
+    position: fixed;
     padding: 0 20px;
+    justify-content: center;
+    background: var(--color-background);
 }
 .container{
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    width: 1200px;
     align-items: center;
     justify-content: space-between;
 }
@@ -41,19 +48,19 @@ header{
     margin-right: 100px;
 }
 .menu nav ul {
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
 }
 .menu nav ul li {
     padding: 10px;
 }
 .menu nav ul li a{
-    color: var(--color-like-gray);
+    font-weight: 400;
+    line-height: 19px;
     text-decoration: none;
     font-family: var(--font-rubik);
     font-size: var(--font-size-16px);
-    font-weight: 400;
-    line-height: 19px;
+    color: var(--color-like-gray);
     transition: var(--animacao);
 }
 .menu nav ul li a:hover{
@@ -63,39 +70,40 @@ header{
 /* style main call */
 .main{
     display: flex;
-    justify-content: center;
     padding: 0 20px;
+    margin-top: 80px;
+    justify-content: center;
 }
 .information_main, 
 .img_information{
     flex: 1;
 }
-.img_information img{
+.img_information img, .features-img img{
     width: 100%;
 }
 
 .information_main h1{
+    line-height: 70px;
     font-family: var(--font-rubik);
     font-size: var(--font-size-50px);
-    line-height: 70px ;
 }
 .information_main p{
-    font-size: var(--font-size-16px);
-    font-family: var(--font-rubik);
     margin-top: 20px;
     margin-bottom: 60px;
+    font-family: var(--font-rubik);
+    font-size: var(--font-size-16px);
 }
 .information_main a{
     text-decoration: none;
     display: inline-block;
-    background: var(--color-like-red);
-    color: var(--color-white);
     padding: 15px 70px;
     border-radius: 10px;
+    color: var(--color-white);
     font-size: var(--font-size-16px);
     font-family: var(--font-rubik);
-    box-shadow: 0px 4px 14px rgb(245 56 56);
     transition: var(--animacao);
+    background: var(--color-like-red);
+    box-shadow: 0px 4px 14px rgb(245 56 56);
 }
 .information_main a:hover{
     filter: brightness(75%);
@@ -104,35 +112,35 @@ header{
 /* style numbers */
 .numbers{
     display: flex;
-    justify-content: center;
     padding: 100px 0;
+    justify-content: center;
 }
-.container--number{
+.container--arguments{
     display: flex;
-    max-width: 1140px;
     padding: 30px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1140px;
     border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 .number-item{
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
 }
 .number-item-img{
     margin-right: 20px;
 }
 .number-item-count{
-    justify-content: center;
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 .number-item-count p{
-    font-size: var(--font-size-25px);
-    font-family: var(--font-rubik);
     font-weight: 700;
+    font-family: var(--font-rubik);
+    font-size: var(--font-size-25px);
 }
 .number-item-count span{
     font-family: var(--font-rubik);
@@ -153,17 +161,84 @@ header{
     font-family: var(--font-rubik);
 }
 .features-information h2{
-    font-size: var(--font-size-35px);
     max-width: 383px;
+    font-size: var(--font-size-35px);
 }
 .features-information p {
     margin: 20px 0;
-    font-size: var(--font-size-16px);
-    max-width: 427px;
     font-weight: 400;
+    max-width: 427px;
+    font-size: var(--font-size-16px);
 }
 .features-information ul li{
     padding: 10px 0;
-    font-size: var(--font-size-14px);
+    align-items: center;
     list-style-type: none;
+    font-size: var(--font-size-14px);
+}
+.features-information ul li::before{
+    top: 7px;
+    margin-right: 10px;
+    position: relative;
+    align-items: center;
+    content: url('../img/check-circle.svg') ;
+}
+.blog{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog h2{
+    color: var(--color-like-blue);
+    font-family: var(--font-rubik);
+    font-size: var(--font-size-35px);
+}
+.padding-title{
+    padding-top: 180px;
+}
+.slideshow{
+   display: flex;
+   width: 1000px;
+   margin: 0 auto;
+}
+.widget-blog{
+    flex: 1;
+    width: 400px;
+    display: flex;
+    margin: 0 10px;
+    padding: 30px 10px;
+    border-radius: 10px;
+    transition: var(--animacao);
+    border: 2px solid var(--color-light-gray);
+
+}
+.widget-blog:hover{
+    border-color: var(--color-like-red);
+}
+
+.center-content{
+    padding: 50px 0;
+}
+.widget-blog-img{
+    width: 72px;
+    height: 72px;
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+    background: var(--color-light-gray);
+}
+.widget-blog-content{
+    width: 233px;
+}
+.widget-blog-content{
+    color: var(--color-like-blue);
+    font-family: var(--font-rubik);
+}
+.widget-blog-content h3{
+    line-height: 30px;
+    font-size: var(--font-size-18px) ;
+}
+.widget-blog-content p{
+    font-size: var(--font-size-16px);
 }
