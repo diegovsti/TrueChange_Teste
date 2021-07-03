@@ -33,7 +33,7 @@ window.addEventListener('load', function(){
               }
             },
             {
-              breakpoint: 670,
+              breakpoint: 767,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -42,3 +42,25 @@ window.addEventListener('load', function(){
           ]
         });          
 });
+
+
+// função para abrir e fechar o menu
+window.onload = function(){
+  document.querySelector(".m-mobile").addEventListener("click", function(){
+      if(document.querySelector(".menu nav ul").style.display == "flex"){
+          document.querySelector(".menu nav ul").style.display = "none";
+      }else {
+          document.querySelector(".menu nav ul").style.display = "flex";
+
+      }
+  });
+}
+
+//função está sendo chamada na tag a, para fechar o menu ao ser clicado
+function FecharMenu(){
+  var $menu = document.querySelector(".menu nav ul");
+
+  if ($menu.style.display == "flex"){
+      $menu.style.display = "none";
+  }
+}
