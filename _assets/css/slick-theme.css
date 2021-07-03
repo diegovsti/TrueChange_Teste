@@ -203,3 +203,19 @@
     opacity: .75;
     color: var(--color-like-red);
 }
+
+@media only screen and (min-width:320px) and (max-width:670px){
+    .slick-prev, .slick-next,
+    .slick-next, .slick-arrow {
+        display: none !important;
+    }
+    .slick-dots{
+        justify-content: center;
+    }
+    .slick-dots li button:before {
+        font-size: 40px;
+    }
+    .slick-next{
+        right: 0;
+    }
+}

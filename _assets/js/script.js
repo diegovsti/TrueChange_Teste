@@ -8,7 +8,16 @@ window.addEventListener('load', function(){
         autoplay: true,
         responsive: [
             {
-              breakpoint: 1125,
+              breakpoint: 1280,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 1279,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
