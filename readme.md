@@ -2,10 +2,10 @@
 
 <p align="center">
   <a href="#sobre-o-desafio">O desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#solução-minha-solução">A solução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#solucao-do-projeto">A solução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-##Sobre o Desafio:
+## Sobre o Desafio:
 
 Esta LP foi construída como entrega do Desafio passado pela TrueChange, cujo objetivo é medir o nível de conhecimento dentro do Front-end.
 
