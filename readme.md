@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="#sobre-o-desafio">O desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#solucao-do-projeto">A solução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#solução-do-projeto">A solução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 ## Sobre o Desafio:
